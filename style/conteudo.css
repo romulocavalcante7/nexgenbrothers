@@ -1,0 +1,83 @@
+
+.container{
+
+    padding: 3em 6%;
+}
+
+.container .flex{
+
+    align-items: center;
+    justify-content: center;
+    gap: 95px;
+}
+
+.texto__site{
+
+    color: var(--cor-do-texto);
+}
+
+.texto__titulo{
+
+    font-size: 65px;
+    text-transform: uppercase;
+    line-height: 70px;
+    
+}
+span{ 
+
+    color: var(--botão--primario);
+    font-size: 65px;
+}
+
+.texto__pagina{
+
+    margin: 20px 0;
+    
+    padding-right: 20em;
+}
+
+.imagem__pg{
+ 
+    position: relative;
+    animation: flutuante 1.5s ease-in-out infinite alternate;
+
+}
+
+.span2{
+
+    font-size: 40px;
+}
+.homeBtn{
+    font-family: 'Poppins';
+    padding: 8px 18px;
+    margin: 16px 12px;
+    font-size: 26px;
+    background-color: transparent;
+    color: var(--i);
+    outline: none;
+    border: 3px solid var(--i);
+    border-radius: 4px;
+    cursor: pointer;
+    pointer-events: all;
+    transition: .3s;
+    font-weight: 600;
+}
+
+.homeBtn:hover{
+    background-color: var(--i);
+    color: #000;
+}
+
+
+@keyframes flutuante{
+
+    0%{
+
+        top: 0;
+    }
+    100%{
+
+        top: 30px;
+    }
+}
+

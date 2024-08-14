@@ -1,0 +1,28 @@
+.sucesso__ancora a{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.sucesso__ancora{
+    font-family: 'Poppins';
+    padding: 8px 18px;
+    margin: 16px 12px;
+    font-size: 26px;
+    background-color: transparent;
+    color: var(--i);
+    outline: none;
+    border: 3px solid var(--i);
+    border-radius: 4px;
+    cursor: pointer;
+    pointer-events: all;
+    transition: .3s;
+    font-weight: 600;
+}
+
+.sucesso__ancora:hover{
+    background-color: var(--i);
+    color: #000;
+}

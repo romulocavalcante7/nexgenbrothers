@@ -1,0 +1,53 @@
+.texto__sobremim{
+
+    color: var(--cor-do-texto);
+}
+
+.titulo__sobre{
+
+    font-size: 50px;
+}
+
+.sobre__mim .titulo__sobre{
+
+   align-items: center;
+  
+    
+}
+
+.nome__eu{
+
+    font-size: 50px;
+    display: block;
+}
+
+.paragrafo{
+
+    margin: 20px 0;
+    text-align:justify;
+    padding-right: 20em;
+}
+
+.social .botao__social{
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--botão--primario);
+    font-size: 22px;
+   cursor: pointer;
+   margin: 0 5px;
+
+}
+
+.social .botao__social:hover{
+
+    box-shadow: 0px 0px 8px #3282b88a; 
+    transform: scale(1.05);
+}
+
+.sobre__mim{
+
+    padding: 85px 4%;
+}

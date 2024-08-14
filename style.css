@@ -1,0 +1,313 @@
+@import url("./style/conteudo.css");
+@import url("./style/especialidades.css");
+@import url("./style/sobremim.css");
+@import url("./style/pottifolio.css");
+@import url("./style/botão.css");
+@import url("./style/footer.css");
+@import url("./style/menu.css");
+@import url("./style/form.css");
+@import url("./style/sucesso.css");
+
+
+:root{
+
+--cor--fundo: #000000;
+--cor-do-texto: #FFFFFF;
+--botão--primario: #3282B8;
+--cor-fonte-efeito: #7D7D7D;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+
+    background-color: var(--cor--fundo);
+    height: 100vh;
+    
+    
+}
+
+.cabeçalho{
+
+   max-width: 1700px;
+   margin: 0 auto;
+}
+
+header{
+
+    padding: 3em 4%;
+}
+
+header > .cabeçalho{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+header a{
+
+    color: var(--cor-fonte-efeito);
+    text-decoration: none;
+    display: inline-block;
+    transition: 3.s;
+}
+
+header a:hover{
+    color: #3282B8;
+    transform: scale(1.05);
+
+
+}
+
+
+.menu__item{
+    list-style: none;
+}
+
+.lista__item{
+
+    display: inline-block;
+    padding: 0 2em;
+  
+}
+
+.botão__primario{
+
+    padding: 10px 40px;
+    background-color: var(--botão--primario);
+    border-radius: 30px;
+    border: transparent;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    cursor: pointer;
+    
+}
+
+.botão__primario:hover{
+
+    box-shadow: 0px 0px 8px #3282b8d5;
+}
+
+.flex{
+
+    display: flex;
+}
+
+.titulo__segundo{
+
+    color: var(--cor-do-texto);
+    font-size: 38px;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+#btnTop {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 1%, rgba(16,0,255,1) 100%, rgba(14,14,93,1) 100%);
+    border-radius: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.arrow {
+    border: solid #000000;
+    border-width: 0 7px 7px 0;
+    padding: 5px;
+    display: inline-block;
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+@media screen and (max-width: 1024px){
+    /*classegeral*/
+
+    .sucesso__ancora{
+
+        margin-left: 4em;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .container .flex{
+        flex-direction: column-reverse;
+    }
+    .homeBtn{
+        display: none;
+    }
+    .imagem__pg{
+        margin-bottom: 15%;
+    }
+    
+ 
+    /*cabclho*/
+    .menu__desktop{
+    display: none;
+ }
+    .botão__contato{
+
+        display: none;
+    }
+    .container{
+
+        padding: 2em 8%;
+    }
+    .texto__titulo{
+
+        font-size: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 32px;
+    }
+    .titulo-front{
+        font-size: 35px;
+    }
+    .imagem__pg{
+        width: 100%;
+    }
+    .container .flex{
+        gap: 3px;
+    }
+    .texto__pagina{
+
+        margin: 25px 0;
+        text-align:justify;
+        padding-right: 0;
+    }
+    .especialidades{
+
+        padding: 3em 9%;
+    }
+    .titulo__segundo{
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .span2{
+        font-size: 35px;
+    }
+    .especialidades .cards{
+
+        color: var(--cor-do-texto);
+        padding: 1.5em;
+        margin-top: 5em;
+        box-shadow: 0 0 25px #0a89f18f;
+    }
+
+    .sobre__mim{
+
+        padding: 80px 8%;
+    }
+    .titulo__sobre{
+        font-size: 30px;
+        text-align: center;
+    }
+    .nome__eu{
+        font-size: 30px;
+    }
+    .paragrafo{
+
+        margin: 20px 0;
+        text-align:justify;
+        padding-right: 0;
+    }
+    .social{
+        text-align: center;
+        text-decoration: none;
+    
+    }
+
+    i .social{
+        text-decoration: none;
+        color: #000000;
+    }
+    .terno{
+        width: 100%;
+    }
+    .portifolio{
+
+        padding: 80px 8%;
+        margin-bottom: 200px;
+        
+    }
+
+    .img__port{
+
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+        
+    }
+    .portifolio .flex{
+        gap: 60px;
+    }
+    .logo__px{
+        width: 75%;
+    }
+    .especialidades .flex{
+        gap: 20px;
+    }
+    .footer{
+        margin-top: 30%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+
+    .menu__mobile{
+        display: none;
+    }
+
+    
+    .btn__abrir-menu{
+        display: none;
+    }
+}
+
+
+
+.whatsapp-button {
+    position: fixed; /* Fixado na tela */
+    bottom: 20px; /* Distância da parte inferior da tela */
+    left: 20px; /* Distância da parte esquerda da tela */
+    width: 60px; /* Largura do botão */
+    height: 60px; /* Altura do botão */
+    background-color: #25D366; /* Cor de fundo do botão (cor do WhatsApp) */
+    border-radius: 50%; /* Faz o botão ser redondo */
+    display: flex; /* Usado para centralizar o ícone */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+    z-index: 100; /* Mantém o botão acima de outros elementos */
+}
+
+.whatsapp-button i {
+    color: white; /* Cor do ícone */
+    font-size: 28px; /* Tamanho do ícone */
+}
+
+.whatsapp-button a {
+    text-decoration: none; /* Remove sublinhado do link */
+    color: inherit; /* Mantém a cor do ícone */
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E; /* Muda a cor do botão ao passar o mouse */
+}

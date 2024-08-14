@@ -1,0 +1,61 @@
+
+.portifolio{
+
+    padding: 80px 4%;
+    margin-bottom: 200px;
+    
+}
+
+.img__port{
+
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 48px;
+    position: relative;
+}
+
+.portifolio .flex{
+
+    justify-content: space-around;
+    margin-top: 60px;
+    gap: 20PX;
+   
+    
+}
+
+.img__port:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000bc;
+    border-radius: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: azure;
+    opacity: 0;
+    transition: 1s;
+}
+
+.overlay:hover{
+    opacity: 1;
+
+}
+.decoration{
+
+    text-decoration: none;
+    color: #FFFFFF;
+}

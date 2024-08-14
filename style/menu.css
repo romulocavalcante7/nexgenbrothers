@@ -1,0 +1,58 @@
+.menu__mobile{
+    background: #000000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .2s;
+}
+.menu__mobile.abrir-menu{
+    width: 60%;
+
+}
+
+.menu__mobile.abrir-menu ~ .overlay__mobii{
+    display: block;
+}
+
+.menu__mobile nav ul {
+    text-align:right;
+}
+
+.menu__mobile nav ul li a{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 25px 8%;
+    
+    
+}
+.menu__mobile nav ul li a:hover{
+    color: #3282B8;
+}
+.menu__mobile .btn__fechar i{
+    color: #3282B8;
+    font-size: 30px;
+
+}
+.menu__mobile .btn__fechar{
+    padding: 20px 5%;
+}
+.btn__abrir-menu i{
+    color: #3282B8;
+    font-size: 40px;
+}
+.overlay__mobii{
+    background-color: #00000081;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
