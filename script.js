@@ -15,3 +15,9 @@ function ocultar(){
 }
 
 ocultar()
+
+
+function toggleOverlay(element) {
+    // Adiciona ou remove a classe 'active' na div clicada
+    element.classList.toggle('active');
+}
