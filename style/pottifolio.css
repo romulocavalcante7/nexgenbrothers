@@ -1,61 +1,88 @@
+/* Estilos específicos para a seção de portfólio */
 
-.portifolio{
-
+.portifolio {
     padding: 80px 4%;
     margin-bottom: 200px;
-    
 }
 
-.img__port{
+.portifolio .titulo__segundo {
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 40px; /* Espaço abaixo do título */
+}
 
-    width: 360px;
-    height: 460px;
+.portifolio .flex {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Define 4 colunas de igual largura */
+    gap: 20px; /* Espaço entre os itens */
+}
+
+/* Estilos dos cards */
+.portifolio .img__port {
+    height: 300px; /* Ajusta a altura conforme necessário */
     background-size: cover;
-    background-position: 100% 0%;
-    transition: 8s;
+    background-position: center; /* Centraliza a imagem de fundo */
+    transition: background-position 10s ease-in-out; /* Transição suave para o efeito de hover */
     cursor: pointer;
-    border-radius: 48px;
+    border-radius: 20px; /* Ajusta o raio da borda */
     position: relative;
+    overflow: hidden; /* Garante que o conteúdo que ultrapassar o container seja ocultado */
 }
 
-.portifolio .flex{
-
-    justify-content: space-around;
-    margin-top: 60px;
-    gap: 20PX;
-   
-    
+.portifolio .img__port:hover {
+    background-position: center bottom; /* Move a posição da imagem de fundo ao passar o mouse */
 }
 
-.img__port:hover{
-    background-position: 100% 100%;
-}
-
-.overlay{
-
+.portifolio .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000000bc;
-    border-radius: 48px;
+    background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo com opacidade */
+    border-radius: 20px; /* Ajusta o raio da borda */
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 24px;
     font-weight: 600;
-    color: azure;
+    color: #FFFFFF;
     opacity: 0;
-    transition: 1s;
+    transition: opacity 0.5s ease-in-out; /* Transição suave para a opacidade */
 }
 
-.overlay:hover{
-    opacity: 1;
-
+.portifolio .img__port:hover .overlay {
+    opacity: 1; /* Mostra a sobreposição no hover */
 }
-.decoration{
 
+.portifolio .decoration {
     text-decoration: none;
     color: #FFFFFF;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra ao texto para melhor contraste */
+}
+
+/* Responsividade */
+
+/* Para telas médias (tablets) */
+@media (max-width: 1024px) {
+    .portifolio .flex {
+        grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    }
+}
+
+/* Para telas pequenas (celulares em paisagem) */
+@media (max-width: 768px) {
+    .portifolio .flex {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    }
+}
+
+/* Para telas muito pequenas (celulares em retrato) */
+@media (max-width: 480px) {
+    .portifolio .flex {
+        grid-template-columns: 1fr; /* 1 coluna */
+    }
+
+    .portifolio .img__port {
+        height: 200px; /* Reduz a altura dos cards para se ajustar melhor às telas pequenas */
+    }
 }
