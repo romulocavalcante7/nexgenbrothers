@@ -26,13 +26,34 @@
     .titulo__segundo .subtitulo {
         display: block; /* Exibe o subtítulo em dispositivos móveis */
     }
+    
+    /* Oculta a legenda dentro dos cards */
+    .caption {
+        display: none;
+    }
+
+    /* Exibe as legendas abaixo dos cards */
+    .mobile-captions {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .mobile-captions .caption {
+        font-size: 14px; /* Tamanho menor para legendas em dispositivos móveis */
+        color: #333;
+        background-color: #f9f9f9;
+        padding: 5px;
+        border-radius: 5px;
+    }
 }
 
 .portifolio .flex {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Define 4 colunas de igual largura */
     gap: 20px; /* Espaço entre os itens */
-    position: relative; /* Para controlar o layout de legendas */
 }
 
 .portifolio .img__port {
@@ -88,8 +109,6 @@
     color: #333; /* Cor do texto abaixo das imagens */
     background-color: #f9f9f9; /* Fundo claro para contraste */
     border-radius: 0 0 20px 20px; /* Raio da borda inferior do texto */
-    display: none; /* Oculta as legendas por padrão */
-    margin-top: 10px; /* Espaço acima da legenda */
 }
 
 /* Media Queries para responsividade */
@@ -105,16 +124,16 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+    .portifolio {
+        padding: 40px 2%;
+    }
+
     .portifolio .flex {
         grid-template-columns: 1fr; /* 1 coluna para telas muito pequenas */
     }
-    
+
     .portifolio .img__port {
         height: 200px; /* Ajusta a altura do card para telas menores */
-    }
-
-    .caption {
-        display: block; /* Exibe as legendas em dispositivos móveis */
     }
 }
