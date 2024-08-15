@@ -27,33 +27,51 @@
     overflow: hidden; /* Garante que o conteúdo que ultrapassar o container seja ocultado */
 }
 
-.portifolio .img__port:hover {
-    background-position: center bottom; /* Move a posição da imagem de fundo ao passar o mouse */
+.portifolio .flex{
+
+    justify-content: space-around;
+    margin-top: 60px;
+    gap: 20PX;
+   
+    
 }
 
-.portifolio .overlay {
+.img__port:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo com opacidade */
-    border-radius: 20px; /* Ajusta o raio da borda */
+    background-color: #000000bc;
+    border-radius: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 24px;
     font-weight: 600;
-    color: #FFFFFF;
+    color: azure;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out; /* Transição suave para a opacidade */
-    max-height: 100%; /* Garantia de que o overlay não ultrapasse o tamanho do card */
-    overflow-y: auto; /* Habilita rolagem vertical se necessário */
+    transition: 1s;
 }
 
-.portifolio .img__port:hover .overlay {
-    opacity: 1; /* Mostra a sobreposição no hover */
+.overlay:hover{
+    opacity: 1;
+
 }
+.decoration{
+
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+/*media query*/
+
 
 .portifolio .decoration {
     text-decoration: none;
