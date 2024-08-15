@@ -25,6 +25,9 @@
     border-radius: 20px; /* Ajusta o raio da borda */
     position: relative;
     overflow: hidden; /* Garante que o conteúdo que ultrapassar o container seja ocultado */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Alinha o texto abaixo da imagem */
 }
 
 /* A imagem rola ao passar o mouse (ou tocar) */
@@ -58,9 +61,14 @@
     opacity: 1; /* Mostra o overlay quando a imagem é tocada ou focada */
 }
 
-.decoration {
-    text-decoration: none;
-    color: #FFFFFF;
+.caption {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333; /* Cor do texto abaixo das imagens */
+    background-color: #f9f9f9; /* Fundo claro para contraste */
+    border-radius: 0 0 20px 20px; /* Raio da borda inferior do texto */
 }
 
 /* Media Queries para responsividade */
@@ -89,4 +97,9 @@
     .portifolio .img__port {
         height: 200px; /* Ajusta a altura do card para telas menores */
     }
+}
+
+
+.titulo__segundo .span2 {
+    color: rgb(91, 91, 91); /* Altera a cor do texto para branco */
 }
