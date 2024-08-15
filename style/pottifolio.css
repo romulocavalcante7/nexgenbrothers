@@ -18,9 +18,9 @@
 
 .portifolio .img__port {
     height: 300px; /* Ajusta a altura conforme necessário */
-    background-size: 150%; /* Aumenta o tamanho da imagem de fundo para permitir a rolagem */
-    background-position: 0% 0%; /* Posição inicial da imagem no canto superior esquerdo */
-    transition: background-position 10s ease-in-out, background-size 10s ease-in-out; /* Transição suave para o efeito de hover */
+    background-size: cover; /* Mantém a imagem no modo de cobertura total */
+    background-position: center top; /* Começa no topo da imagem */
+    transition: background-position 10s ease-in-out; /* Transição suave para o efeito de hover */
     cursor: pointer;
     border-radius: 20px; /* Ajusta o raio da borda */
     position: relative;
@@ -33,12 +33,9 @@
     gap: 20px;
 }
 
-.img__port:hover {
-    background-position: 100% 100%; /* Movimenta a imagem para a posição final no hover */
-}
-
-.portifolio .img__port:active {
-    background-position: 100% 100%; /* Garante que a imagem role também ao tocar */
+.img__port:hover,
+.img__port:active {
+    background-position: center bottom; /* Movimenta a imagem para o fundo da área */
 }
 
 .overlay {
@@ -66,14 +63,6 @@
 .decoration {
     text-decoration: none;
     color: #FFFFFF;
-}
-
-/*media query*/
-
-.portifolio .decoration {
-    text-decoration: none;
-    color: #FFFFFF;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra ao texto para melhor contraste */
 }
 
 /* Media Queries para responsividade */
