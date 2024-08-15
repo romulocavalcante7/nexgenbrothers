@@ -18,30 +18,30 @@
 
 .portifolio .img__port {
     height: 300px; /* Ajusta a altura conforme necessário */
-    background-size: cover;
-    background-position: center; /* Centraliza a imagem de fundo */
-    transition: background-position 10s ease-in-out; /* Transição suave para o efeito de hover */
+    background-size: 150%; /* Aumenta o tamanho da imagem de fundo para permitir a rolagem */
+    background-position: 0% 0%; /* Posição inicial da imagem no canto superior esquerdo */
+    transition: background-position 10s ease-in-out, background-size 10s ease-in-out; /* Transição suave para o efeito de hover */
     cursor: pointer;
     border-radius: 20px; /* Ajusta o raio da borda */
     position: relative;
     overflow: hidden; /* Garante que o conteúdo que ultrapassar o container seja ocultado */
 }
 
-.portifolio .flex{
-
+.portifolio .flex {
     justify-content: space-around;
     margin-top: 60px;
-    gap: 20PX;
-   
-    
+    gap: 20px;
 }
 
-.img__port:hover{
-    background-position: 100% 100%;
+.img__port:hover {
+    background-position: 100% 100%; /* Movimenta a imagem para a posição final no hover */
 }
 
-.overlay{
+.portifolio .img__port:active {
+    background-position: 100% 100%; /* Garante que a imagem role também ao tocar */
+}
 
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -59,19 +59,16 @@
     transition: 1s;
 }
 
-.overlay:hover{
+.overlay:hover {
     opacity: 1;
-
 }
-.decoration{
 
+.decoration {
     text-decoration: none;
     color: #FFFFFF;
 }
 
-
 /*media query*/
-
 
 .portifolio .decoration {
     text-decoration: none;
