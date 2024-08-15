@@ -99,13 +99,14 @@
 
 /* Estilo para o título principal */
 .titulo__segundo .titulo-principal {
-    color: #3282B8; /* Azul para "PORTIFÓLIO" */
+    color: #3282b8; /* Azul para "PORTIFÓLIO" */
 }
 
 /* Estilo para o subtítulo */
 .titulo__segundo .subtitulo {
     color: white; /* Branco para "Caso esteja pelo celular aperte e segure" */
     display: none; /* Oculta o subtítulo por padrão */
+    font-size: 14px; /* Tamanho do texto menor */
 }
 
 /* Media Query para dispositivos móveis */
@@ -114,3 +115,4 @@
         display: block; /* Exibe o subtítulo em dispositivos móveis */
     }
 }
+
