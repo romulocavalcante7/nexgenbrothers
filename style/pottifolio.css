@@ -1,5 +1,4 @@
 /* Estilos específicos para a seção de portfólio */
-
 .portifolio {
     padding: 80px 4%;
     margin-bottom: 200px;
@@ -72,7 +71,6 @@
 }
 
 /* Media Queries para responsividade */
-
 @media (max-width: 1200px) {
     .portifolio .flex {
         grid-template-columns: repeat(3, 1fr); /* 3 colunas para telas menores */
@@ -99,7 +97,20 @@
     }
 }
 
+/* Estilo para o título principal */
+.titulo__segundo .titulo-principal {
+    color: #3282B8; /* Azul para "PORTIFÓLIO" */
+}
 
-.titulo__segundo .span2 {
-    color: rgb(91, 91, 91); /* Altera a cor do texto para branco */
+/* Estilo para o subtítulo */
+.titulo__segundo .subtitulo {
+    color: white; /* Branco para "Caso esteja pelo celular aperte e segure" */
+    display: none; /* Oculta o subtítulo por padrão */
+}
+
+/* Media Query para dispositivos móveis */
+@media (max-width: 768px) {
+    .titulo__segundo .subtitulo {
+        display: block; /* Exibe o subtítulo em dispositivos móveis */
+    }
 }
