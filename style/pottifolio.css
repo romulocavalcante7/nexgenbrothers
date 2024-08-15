@@ -9,10 +9,30 @@
     margin-bottom: 40px; /* Espaço abaixo do título */
 }
 
+.portifolio .titulo__segundo .titulo-principal {
+    color: #3282b8; /* Azul para "PORTFÓLIO" */
+    font-size: 35px; /* Tamanho reduzido para "PORTFÓLIO" */
+    display: block; /* Exibe o título principal */
+}
+
+.portifolio .titulo__segundo .subtitulo {
+    color: white; /* Branco para "Caso esteja pelo celular aperte e segure" */
+    display: none; /* Oculta o subtítulo por padrão */
+    font-size: 14px; /* Tamanho do texto menor */
+}
+
+/* Media Query para dispositivos móveis */
+@media (max-width: 768px) {
+    .titulo__segundo .subtitulo {
+        display: block; /* Exibe o subtítulo em dispositivos móveis */
+    }
+}
+
 .portifolio .flex {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Define 4 colunas de igual largura */
     gap: 20px; /* Espaço entre os itens */
+    position: relative; /* Para controlar o layout de legendas */
 }
 
 .portifolio .img__port {
@@ -68,6 +88,8 @@
     color: #333; /* Cor do texto abaixo das imagens */
     background-color: #f9f9f9; /* Fundo claro para contraste */
     border-radius: 0 0 20px 20px; /* Raio da borda inferior do texto */
+    display: none; /* Oculta as legendas por padrão */
+    margin-top: 10px; /* Espaço acima da legenda */
 }
 
 /* Media Queries para responsividade */
@@ -83,36 +105,16 @@
     }
 }
 
-@media (max-width: 600px) {
-    .portifolio {
-        padding: 40px 2%;
-    }
-
+@media (max-width: 768px) {
     .portifolio .flex {
         grid-template-columns: 1fr; /* 1 coluna para telas muito pequenas */
     }
-
+    
     .portifolio .img__port {
         height: 200px; /* Ajusta a altura do card para telas menores */
     }
-}
 
-/* Estilo para o título principal */
-.titulo__segundo .titulo-principal {
-    color: #3282b8; /* Azul para "PORTIFÓLIO" */
-}
-
-/* Estilo para o subtítulo */
-.titulo__segundo .subtitulo {
-    color: white; /* Branco para "Caso esteja pelo celular aperte e segure" */
-    display: none; /* Oculta o subtítulo por padrão */
-    font-size: 14px; /* Tamanho do texto menor */
-}
-
-/* Media Query para dispositivos móveis */
-@media (max-width: 768px) {
-    .titulo__segundo .subtitulo {
-        display: block; /* Exibe o subtítulo em dispositivos móveis */
+    .caption {
+        display: block; /* Exibe as legendas em dispositivos móveis */
     }
 }
-
